@@ -22,20 +22,14 @@ public class KafkaConsumer {
 
   @PostConstruct
   public void listenToEvents() {
+    //TODO Something with the received Kafka message.
     kafkaReceiver
         .receive()
-        .flatMap(this::handleReceiverRecord)
         .subscribe(a -> log.info("Number of events received {}", counter.incrementAndGet()));
   }
 
   private Mono<String> handleReceiverRecord(final ReceiverRecord<String, String> receiverRecord) {
-//    return Mono.just(receiverRecord)
-//        .flatMap(this::createMessage)
-//        .single();
+    //TODO Implement me!
     return Mono.empty();
   }
-
-//  private Mono<String> createMessage(ReceiverRecord<String, String> receiverRecord) {
-//    return Mono.just(receiverRecord.value());
-//  }
 }

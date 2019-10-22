@@ -30,6 +30,6 @@ public class KafkaConfiguration {
             ConsumerConfig.GROUP_ID_CONFIG, "test-1"
         )
     );
-    return KafkaReceiver.create(options.subscription(singleton("msg-sent")));
+    return KafkaReceiver.create(options.subscription(singleton("daily-quotes")));
   }
 }
