@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>com.example.reactive</groupId>
-	<artifactId>kafka-consumer</artifactId>
+	<artifactId>jduchess-2019-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka-consumer</name>
 	<description>Demo project for a reactive Kafka consumer</description>
